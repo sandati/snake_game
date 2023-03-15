@@ -1,4 +1,4 @@
-# snake_game
+# Snake Game
 
 1. Install Processing
     - [How to download processing?](https://processing.org/download)
