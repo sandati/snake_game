@@ -23,7 +23,7 @@ void foodColor() {
   
 }
 
-// dead
+// dead (6)
 void foodPoison() {
   
 }
