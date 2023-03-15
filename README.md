@@ -1,7 +1,7 @@
 # snake_game
 
-1. Installer Processing
-    [How to download processing?](https://processing.org/download)
+1. Install Processing
+    - [How to download processing?](https://processing.org/download)
 
 2. Launch project
     - Clone repository: ```git@github.com:sandati/snake_game.git```
