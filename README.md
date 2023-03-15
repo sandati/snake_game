@@ -1,7 +1,9 @@
 # Snake Game
 
-## Documentation (***Processing***)
+### Documentation (***Processing***)
 [Processing](https://processing.org/)
+
+### Start game
 
 1. Install Processing
     - [How to download processing?](https://processing.org/download)
