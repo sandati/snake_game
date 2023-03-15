@@ -27,3 +27,13 @@ void foodColor() {
 void foodPoison() {
   
 }
+
+// speed (7)
+void foodSpeed() {
+  
+}
+
+// slow (8)
+void foodSlow() {
+  
+}
