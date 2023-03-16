@@ -5,7 +5,8 @@ void restartGame() {
   life = 0;
   pause = 1;
   restart = 1;
-  speed = 1;
+  speed = 10;
+  offset = 5;
   velX = 0;
   velY = 0;
   back = 0;

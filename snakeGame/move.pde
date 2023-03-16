@@ -23,6 +23,6 @@ void move() {
     
   }
   copyPosTail();
-  //if (speed == 5)
-    //speed = s;
+  if (speed == offset)
+    speed = s;
 }
