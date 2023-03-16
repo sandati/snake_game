@@ -1,6 +1,15 @@
+int foodX;
+int foodY;
+int f = 0;
+
 // add 1 to score (1)
 void food() {
-  
+  if (f == 0) {
+    foodX = int(random(20, 1161));
+    foodY = int(random(20, 761));
+    f = 1;
+  }
+  node(foodX, foodY, color(255));
 }
 
 // add 10 to score (2)

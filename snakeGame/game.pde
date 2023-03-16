@@ -22,8 +22,36 @@ void pauseGame() {
   }
 }
 
+void gameOver() {
+  fill(255, 0, 0);
+  textSize(100);
+  text("GAME OVER", 370, 450);
+}
+
+void allFood() {
+  food();
+}
+
 void game() {
-  node(300, 100, color(60, 65, 177, 255));
+  allFood();
+ 
+  if (restart == 2)
+    restartGame();
+
+  if (life == 0) {
+    if (pause == 1) {
+      eat();
+      if (frameCount % speed == 0) {
+        move();
+        offset = frameCount;
+      }
+      colorTail();
+    }
+  } else {
+    gameOver();
+  }
+  
+  drawTail();
   
   pauseGame();
   
