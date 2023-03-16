@@ -30,6 +30,7 @@ void gameOver() {
 
 void allFood() {
   food();
+  foodSpeed();
 }
 
 void game() {
@@ -41,9 +42,8 @@ void game() {
   if (life == 0) {
     if (pause == 1) {
       eat();
-      if (frameCount % speed == 0) {
-        move();
-        offset = frameCount;
+      if (time.getTime() <= 0.0) {
+        move(); 
       }
       colorTail();
     }

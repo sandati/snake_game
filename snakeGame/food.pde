@@ -1,6 +1,6 @@
-int foodX;
-int foodY;
-int f = 0;
+int foodX, foodY, f = 0;
+
+Timer tSpeed = new Timer(10);
 
 // add 1 to score (1)
 void food() {
@@ -39,7 +39,12 @@ void foodPoison() {
 
 // speed (7)
 void foodSpeed() {
-  
+  float time = tSpeed.getTime();
+ 
+  tSpeed.countDown();
+  if (time <= 0.0) {
+    tSpeed.setTime(10); 
+  }
 }
 
 // slow (8)

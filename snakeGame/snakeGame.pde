@@ -3,17 +3,18 @@ int score = 0;
 int life = 0;
 int pause = 1;
 int restart = 1;
-int speed = 10;
-int offset = 5;
+float speed = 0.1;
 int velX = 0;
 int velY = 0;
 int back = 0;
 int start = 0;
+Timer time;
 
 void setup() {
   mode = 0;
   size(1200, 800); 
   initTail();
+  time = new Timer(speed); 
   background(100, 110, 230);
 }
 
@@ -25,8 +26,7 @@ void draw() {
   if (mode == 1) {
     game();
   }
-  if (speed > offset)
-    speed--;
+  time.countDown();
   //clear();
 }
 
