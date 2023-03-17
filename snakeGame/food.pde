@@ -28,7 +28,7 @@ void food() {
 // add 10 to score (2)
 void foodSuper() {
   float time = tSuper.getTime();
-  
+
   tSuper.countDown();
   if (fS == 0 && time <= 0.0) {
     fS = 1;
@@ -54,7 +54,7 @@ void foodSuper() {
 // grow (3)
 void foodSuperGrow() {
   float time = tGrow.getTime();
-  
+
   tGrow.countDown();
   if (fG == 0 && time <= 0.0) {
     fG = 1;
@@ -80,7 +80,7 @@ void foodSuperGrow() {
 // shrink (4)
 void foodShrink() {
   float time = tShrink.getTime();
-  
+
   tShrink.countDown();
   if (fSh == 0 && time <= 0.0) {
     fSh = 1;
@@ -106,7 +106,7 @@ void foodShrink() {
 // change color (5)
 void foodColor() {
   float time = tColor.getTime();
-  
+
   tColor.countDown();
   if (fC == 0 && time <= 0.0) {
     fC = 1;
@@ -132,7 +132,7 @@ void foodColor() {
 // dead (6)
 void foodPoison() {
   float time = tPoison.getTime();
-  
+
   tPoison.countDown();
   if (fP == 0 && time <= 0.0) {
     fP = 1;
@@ -158,7 +158,7 @@ void foodPoison() {
 // speed (7)
 void foodSpeed() {
   float time = tSpeed.getTime();
- 
+
   tSpeed.countDown();
   if (fSp == 0 && time <= 0.0) {
     tSpeed.setTime(10);
@@ -184,7 +184,7 @@ void foodSpeed() {
 // slow (8)
 void foodSlow() {
   float time = tSlow.getTime();
- 
+
   tSlow.countDown();
   if (fSl == 0 && time <= 0.0) {
     tSlow.setTime(10);

@@ -12,9 +12,9 @@ Timer time;
 
 void setup() {
   mode = 0;
-  size(1200, 800); 
+  size(1200, 800);
   initTail();
-  time = new Timer(speed); 
+  time = new Timer(speed);
   background(100, 110, 230);
 }
 

@@ -4,7 +4,7 @@ ArrayList<Node> copyTail = new ArrayList<Node>();
 void initTail() {
   int x = 600;
   int y = 400;
-  
+
   for (int i = 0; i < 5; i++) {
     tail.add(new Node());
     tail.get(i).setPosition(x, y);
@@ -29,9 +29,7 @@ void colorTail() {
 }
 
 void drawTail() {
-  // tail.get(0).node(400, 800, color(200, 200, 200));
   for (int i = 0; i < tail.size(); i++) {
-    // println("tail");
     tail.get(i).node();
   }
 }
@@ -40,7 +38,7 @@ void growTail() {
   int s = tail.size();
   int x = tail.get(s - 1).posX - (velX * 20);
   int y = tail.get(s - 1).posY - (velY * 20);
- 
+
   tail.add(new Node());
   tail.get(s).setPosition(x, y);
   copyTail.add(new Node());
@@ -49,7 +47,7 @@ void growTail() {
 
 void shrinkTail() {
   int s = tail.size() - 1;
-  
+
   tail.remove(s);
   copyTail.remove(s);
 }

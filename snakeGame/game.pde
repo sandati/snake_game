@@ -41,7 +41,7 @@ void allFood() {
 
 void game() {
   allFood();
- 
+
   if (restart == 2)
     restartGame();
 
@@ -49,19 +49,16 @@ void game() {
     if (pause == 1) {
       eat();
       if (time.getTime() <= 0.0) {
-        move(); 
+        move();
       }
       colorTail();
     }
   } else {
     gameOver();
   }
-  
+
   drawTail();
-  
   pauseGame();
-  
   grill();
-  
   header();
 }
