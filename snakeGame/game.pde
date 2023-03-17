@@ -31,6 +31,12 @@ void gameOver() {
 void allFood() {
   food();
   foodSpeed();
+  foodSuper();
+  foodSlow();
+  foodSuperGrow();
+  foodShrink();
+  foodPoison();
+  foodColor();
 }
 
 void game() {

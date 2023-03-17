@@ -19,7 +19,11 @@ void colorTail() {
     if (i == 0) {
       tail.get(i).setColor(color(200, 200, 200));
     } else {
-      tail.get(i).setColor(color(50, 50, 50));
+      if (tClr == 0) {
+        tail.get(i).setColor(color(50, 50, 50));
+      } else {
+        tail.get(i).setColor(color(random(255), random(255), random(255)));
+      }
     }
   }
 }
@@ -30,4 +34,22 @@ void drawTail() {
     // println("tail");
     tail.get(i).node();
   }
+}
+
+void growTail() {
+  int s = tail.size();
+  int x = tail.get(s - 1).posX - (velX * 20);
+  int y = tail.get(s - 1).posY - (velY * 20);
+ 
+  tail.add(new Node());
+  tail.get(s).setPosition(x, y);
+  copyTail.add(new Node());
+  copyTail.get(s).setPosition(x, y);
+}
+
+void shrinkTail() {
+  int s = tail.size() - 1;
+  
+  tail.remove(s);
+  copyTail.remove(s);
 }
