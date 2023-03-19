@@ -7,13 +7,21 @@ int foodShX, foodShY, fSh = 0;
 int foodPX, foodPY, fP = 0;
 int foodCX, foodCY, fC, tClr = 0;
 
-Timer tSpeed = new Timer(18);
-Timer tSlow = new Timer(16);
-Timer tSuper = new Timer(20);
-Timer tGrow = new Timer(23);
-Timer tShrink = new Timer(27);
-Timer tPoison = new Timer(35);
-Timer tColor = new Timer(30);
+float sp = 18;
+float sl = 16;
+float su = 20;
+float gr = 23;
+float sh = 27;
+float po = 35;
+float co = 30;
+
+Timer tSpeed = new Timer(sp);
+Timer tSlow = new Timer(sl);
+Timer tSuper = new Timer(su);
+Timer tGrow = new Timer(gr);
+Timer tShrink = new Timer(sh);
+Timer tPoison = new Timer(po);
+Timer tColor = new Timer(co);
 
 // add 1 to score (1)
 void food() {
@@ -47,7 +55,7 @@ void foodSuper() {
     foodSX = 0;
     foodSY = 0;
     fS = 0;
-    tSuper.setTime(20);
+    tSuper.setTime(su);
   }
 }
 
@@ -73,7 +81,7 @@ void foodSuperGrow() {
     foodGX = 0;
     foodGY = 0;
     fG = 0;
-    tGrow.setTime(23);
+    tGrow.setTime(gr);
   }
 }
 
@@ -99,7 +107,7 @@ void foodShrink() {
     foodShX = 0;
     foodShY = 0;
     fSh = 0;
-    tShrink.setTime(27);
+    tShrink.setTime(sh);
   }
 }
 
@@ -125,7 +133,7 @@ void foodColor() {
     foodCX = 0;
     foodCY = 0;
     fC = 0;
-    tColor.setTime(30);
+    tColor.setTime(co);
   }
 }
 
@@ -151,7 +159,7 @@ void foodPoison() {
     foodPX = 0;
     foodPY = 0;
     fP = 0;
-    tPoison.setTime(35);
+    tPoison.setTime(po);
   }
 }
 
@@ -177,7 +185,7 @@ void foodSpeed() {
     foodSpX = 0;
     foodSpY = 0;
     fSp = 0;
-    tSpeed.setTime(18);
+    tSpeed.setTime(sp);
   }
 }
 
@@ -203,6 +211,6 @@ void foodSlow() {
     foodSlX = 0;
     foodSlY = 0;
     fSl = 0;
-    tSlow.setTime(16);
+    tSlow.setTime(sl);
   }
 }

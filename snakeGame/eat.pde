@@ -11,7 +11,7 @@ void eatFoodSuper() {
     fS = 0;
     foodSX = 0;
     foodSY = 0;
-    tSuper.setTime(20);
+    tSuper.setTime(su);
     score += 10;
     for (int i = 0; i < 3; i++)
       growTail();
@@ -23,7 +23,7 @@ void eatFoodSpeed() {
     fSp = 0;
     foodSpX = 0;
     foodSpY = 0;
-    tSpeed.setTime(18);
+    tSpeed.setTime(sp);
     score += 1;
     if (speed > 0.01)
       speed -= 0.02;
@@ -35,7 +35,7 @@ void eatFoodSlow() {
     fSl = 0;
     foodSlX = 0;
     foodSlY = 0;
-    tSlow.setTime(16);
+    tSlow.setTime(sl);
     score += 1;
     speed += 0.02;
   }
@@ -46,7 +46,7 @@ void eatFoodSuperGrow() {
     fG = 0;
     foodGX = 0;
     foodGY = 0;
-    tGrow.setTime(23);
+    tGrow.setTime(gr);
     score += 1;
     for (int i = 0; i < 10; i++)
       growTail();
@@ -65,7 +65,7 @@ void eatFoodShrink() {
     fSh = 0;
     foodShX = 0;
     foodShY = 0;
-    tShrink.setTime(27);
+    tShrink.setTime(sh);
     score += 1;
     for (int i = 0; i < 3; i++) {
       if (tail.size() > 1) {
@@ -82,7 +82,7 @@ void eatFoodColor() {
     fC = 0;
     foodCX = 0;
     foodCY = 0;
-    tSuper.setTime(30);
+    tSuper.setTime(su);
     score += 1;
     if (tClr == 0) {
       tClr = 1;
